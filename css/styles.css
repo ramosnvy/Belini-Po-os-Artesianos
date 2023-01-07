@@ -216,7 +216,7 @@ body {
 
     .text-i{
         margin-top: 10em;
-        margin-bottom: 10em;
+        margin-bottom: 12em;
     }
 
     .text-i-h1{
@@ -279,7 +279,11 @@ body {
 
 @media(min-width: 768px){
 
+    .jobs-title h1 {
 
+        margin-top: 0;
+
+    }
 
     .info{
         display: flex;
@@ -301,6 +305,7 @@ body {
     }
 
     .info-title{
+
         margin-bottom: 1em;
         font-size: 2rem;
 
@@ -350,6 +355,131 @@ body {
     }
 
 }
+
+.contato-title{
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.btn-contato{
+    margin-bottom: 0;
+}.btn-contato{
+     margin-bottom: 3em;
+
+ }
+
+.met-contato{
+    display: block;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+form {
+    /* Centralizar o formulário na pagina */
+    margin: 0 auto;
+    width: 400px;
+    /* Ver o esboço do formulário */
+
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /* Para garantir que todos os rótulos tenham o mesmo tamanho e estejam devidamente alinhados*/
+    display: inline-block;
+    width: 90px;
+    text-align: start;
+}
+
+input, textarea {
+    /*
+  Para garantir que todos os campos de texto tenham as mesmas configurações de fonte
+       Por padrão, as áreas de texto possuem a mesma fonte */
+    font: 1em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos os campos de texto*/
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Para harmonizar o aspecto e a sensação da borda do campo de texto */
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    /* Para dar um pouco de destaque aos elementos ativos*/
+    border-color: #000;
+}
+
+textarea {
+    /* Para alinhar corretamente campos de texto multilinha com seus rótulos */
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+}
+
+.button {
+    /* Para posicionar os botões na mesma posição dos campos de texto */
+    padding-left: 90px; /* mesmo tamanho que os elementos do rótulo */
+}
+
+button {
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço
+       entre os rótulos e seus campos de texto*/
+    margin-left: .5em;
+}
+
+.via-txt{
+    color: white;
+}
+
+.ou-txt{
+    color: black;
+}
+
+
+
+@media(min-width: 768px){
+
+    .contato-title{
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+
+    .btn-contato{
+        margin-bottom: 0;
+    }
+
+
+    .met-contato{
+        display: flex;
+        justify-content: center;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    form {
+        /* Centralizar o formulário na pagina */
+        margin: 0 auto;
+        width: 400px;
+        /* Ver o esboço do formulário */
+        padding-left: 10em;
+        border-left: 1px solid black;
+
+    }
+    .via-txt{
+        color: black;
+    }
+
+    .ou-txt{
+        color: white;
+    }
+}
+
+
 
 
 /*FOOTER TOP*/
